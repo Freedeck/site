@@ -1,0 +1,78 @@
+@import url('style.css');
+@import url('responsive.css');
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1em;
+  gap: 0.5em;
+  border-radius: 1.5rem;
+  width: 60%;
+}
+
+a.download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.125s;
+}
+
+a.download-container:hover {
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 0 0.5em rgba(255,255,255,0.5);
+  transform: scale(1.05) rotate(.5deg);
+}
+
+a.download-container:active {
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0 0 0.5em rgba(255,255,255,0.5);
+  transform: scale(1) rotate(1deg);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.what-is {
+  background: linear-gradient(105deg, rgba(255, 0, 89, 1) 0%, rgb(0, 179, 255) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+  background-size: 400% 400%;
+  animation: error-bg 5s infinite linear;
+}
+
+@keyframes error-bg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.blue {
+  background-color: #369DE2;
+  color: black;
+}
+
+.red {
+  background-color: #FF0059;
+}
+
+.blue a, .red a{
+  color: #262626;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}

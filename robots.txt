@@ -1,0 +1,11 @@
+# start of file
+user-agent: *
+disallow: /_fd/
+disallow: /css/
+disallow: /img/
+disallow: /discord/
+disallow: /github/
+disallow: /content/
+disallow: /.user.ini
+disallow: /fd_repository
+disallow: /release

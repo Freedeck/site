@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Rethink Sans;
+  font-display: fallback;
+  src: url('../content/RethinkSans-VariableFont_wght.ttf');
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+body {
+  background-color: #2D2D32;
+  color: white;
+  font-family: Rethink Sans;
+  scroll-behavior: smooth;
+}
+
+#header {
+  margin: 0;
+  padding: 0;
+  height: 85%;
+  scrollbar-width: 0;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1.5em;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 1.5rem;
+  background-color: rgba(0,0,0,0.25);
+  transition-duration: 0.125s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.flex-wrap-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.image-comparison {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header .imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+
+#header .imgs img {
+  width: 45%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+  border-radius: 1.5rem;
+  width: calc(100vw - 3.5em);
+}
+
+.text {
+    font-size: x-large;
+}
