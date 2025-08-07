@@ -1,0 +1,39 @@
+@media (max-width: 1400px) {
+  .navbar ul {
+    gap: 0.5em;
+  }
+  a {
+    padding: 0 .5rem 0 .5rem !important;
+  }
+  .download-container:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar ul {
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 808px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+    .download-container {
+    padding: 0 .5rem 0 .5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.35rem !important;
+  }
+}

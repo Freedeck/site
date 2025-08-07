@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Rethink Sans;
+  font-display: fallback;
+  src: url('/fonts/RethinkSans-VariableFont_wght.ttf');
+}
+
+:root {
+  --tile-columns: repeat(5, 2fr);
+  --font: 'Rethink Sans', sans-serif;
+  --main-bg-size: 400% 400%;
+  --main-bg: linear-gradient(105deg, rgba(255, 0, 89, 1) 0%, rgb(0, 179, 255) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+              
+  --border-color: rgba(255, 255, 255, 0.1);
+  --generic-border: 1px solid rgba(255,255,255,0.1);
+  --modal-bg: #17212a;
+  --modal-color: white;
+
+  --button-width: 6rem;
+  --button-height: 6rem;
+  
+  --tile-bg: rgba(0, 0, 0, 0.5);
+  --tile-border: 1px solid rgba(255,255,255,0.825);
+  --tile-width: var(--button-width);
+  --tile-height: var(--button-height);
+  
+  --tile-radius: 1.5rem;
+  --button-radius: 1.5rem;
+  --main-radius: 1.5rem;
+  
+  --app-tile-container-width: 100vw;
+  
+  --text-color: white;
+  --text-color-secondary: white;
+  --font-size: 15px;
+
+  --input-bg: #17212a;
+  --input-slider-bg: rgb(12,12,12);
+  --input-color: white;
+
+  --link-hover-background: rgba(0,0,0,0.25);
+
+  --indicator-border: 1px solid rgba(0,0,0,0.5);
+  --indicator-divisor: 4;
+  --indicator-offset: 5px;
+  --indicator-green: rgba(0, 255, 0, 0.5);
+  --indicator-yellow: rgba(255, 255, 0, 0.5);
+  --indicator-red: rgba(255, 0, 0, 0.5);
+
+  --marketplace-plugin-updatable: #545400;
+  --marketplace-plugin-no-updates: #1a541a;
+  --marketplace-plugin-installed: #1a1a1a;
+
+  --slider-background: #3498db;
+  --slider-foreground: transparent;
+
+  --companion-left-sidebar-bg: rgba(0, 0, 0, 0.6);
+  --companion-right-sidebar-bg: rgba(0, 0, 0, 0.5);
+  --companion-left-sidebar-color: white;
+  --companion-right-sidebar-color: white;
+
+  --companion-sidebar-item-bg: rgba(0, 0, 0, 0.25);
+  --companion-sidebar-item-color: white;
+
+  --modal-item-bg: linear-gradient(105deg,rgba(0, 179, 255, 1) 0%, rgba(0, 135, 255, 1) 50%, rgba(0, 179, 255, 1) 100%);
+  --modal-item-bg-size: 400% 400%;
+  --modal-item-bg-anim: error-bg 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  --modal-item-text: white;
+
+  --glow-unlift: rgba(0, 179, 255,1);
+  --glow-lifted: rgba(255, 0, 89, 1);
+
+  --selected-item-bg: var(--modal-item-bg);
+  --selected-item-bg-size: var(--modal-item-bg-size);
+  --selected-item-bg-anim: var(--modal-item-bg-anim);
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+body {
+  /* background-color: #2D2D32; */
+  background: radial-gradient(circle at 0%, #2D2D32, #1b1b21), linear-gradient(135deg, #2D2D32, #1b1b21);
+  color: white;
+  font-family: Rethink Sans;
+  scroll-behavior: smooth;
+}
+
+a.trapped {
+  padding: 0 .5rem 0 .5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: .5rem;
+  border-radius: 1.5rem;
+  background-color: rgba(0,0,0,0.25);
+  width: max-content;
+  border: var(--generic-border);
+	text-align: left;
+	transition-duration: .25s;
+}
+a:hover {
+	transform: scale(1.15);
+  background-color: rgba(255,255,255,0.1);
+}
+a.nostyle {
+  background-color: transparent !important;
+  padding:0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+a.nostyle:hover {
+  transform: none !important;
+}
+
+.flex-wrap-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
