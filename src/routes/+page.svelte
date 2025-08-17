@@ -34,7 +34,7 @@
   <h2>More than just a macropad; it's a Freedeck.</h2>
   <br />
   <a
-    href="https://github.com/Freedeck/bootstrapper/releases/latest/download/Freedeck.Installer.exe"
+    href="https://github.com/Freedeck/app/releases/latest/download/Freedeck.exe"
     class="download-container"
   >
     <span>
